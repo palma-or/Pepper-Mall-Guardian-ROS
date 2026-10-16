@@ -1,0 +1,606 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: 1 - Greet Path
+  steps:
+  - user: |
+      Hello There!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      What are you capable of?
+    intent: capabilities
+  - action: utter_capabilities
+  - user: |
+      Thank you
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      Bye!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 2 - Generic Double Count Task
+  steps:
+  - user: |
+      Hello, Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      How many people are currently in the mall?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      and how many of them are [boys]{"entity": "gender", "value": "male"}?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Stop!
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      Goodbye!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 3 - Form Path -- A test story with a form (Utter_Submit → intent = affirm)
+  steps:
+  - user: |
+      Hi Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      I can no longer find my [daughter]{"entity": "gender", "value": "female"}. [She]{"entity": "gender", "value": "female"} is carrying a Winx [backpack]{"entity": "clothing", "value": "bag"} and wearing a wool [hat](clothing).
+    intent: finding_someone
+  - action: action_slot_mapping
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      I can't remember at the moment, sorry.
+    intent: doubt
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      yep
+    intent: affirm
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      nope
+    intent: deny
+  - action: find_person_form
+  - active_loop: null
+  - action: utter_submit_find_person_form
+  - user: |
+      Yep
+    intent: affirm
+  - action: action_submit
+  - user: |
+      Thank u, Pepper!
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      Bye-bye, Pepper!
+    intent: goodbye
+  - action: action_reset  
+  - action: utter_goodbye
+
+- story: 4 - Form Path -- A test story with a form (Utter_Submit → intent = inform)
+  steps:
+  - user: |
+      Hi Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      I can no longer find my friend. [He]{"entity": "gender", "value": "male"} is wearing a [hat](clothing), but [not](negation) a [rucksack]{"entity": "clothing", "value": "bag"}.
+    intent: finding_someone
+  - action: action_slot_mapping
+  - action: find_person_form
+  - active_loop: null
+  - action: utter_submit_find_person_form
+  - user: |
+      Sorry. I made a mistake. [He]{"entity": "gender", "value": "male"} is [not](negation) wearing a [hat](clothing).
+    intent: inform
+  - action: action_slot_mapping
+  - action: find_person_form
+  - active_loop: null
+  - action: utter_submit_find_person_form
+  - user: |
+      Yep!
+    intent: affirm
+  - action: action_submit
+  - user: |
+      Thanks for the information!
+    intent: thanks
+  - action: utter_thanks
+
+- story: 5 - Form Path -- A test story with a form (Find_person_form → stop = reset)
+  steps:
+  - user: |
+      Hello Peppa!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      I can no longer find my [grandma]{"entity": "gender", "value": "female"}. Are you able to find [her]{"entity": "gender", "value": "female"}?
+    intent: finding_someone
+  - action: action_slot_mapping
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      [purse]{"entity": "clothing", "value": "bag"}
+    intent: inform
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      I can't remember at the moment. Excuse me.
+    intent: doubt
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      Don't worry. I found her. She just called me.
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - action: action_deactivate_loop
+  - active_loop: null
+
+- story: 6 - Form Path -- A test story with a form (Utter_Submit → stop = reset)
+  steps:
+  - user: |
+      I can no longer find my [son]{"entity": "gender", "value": "male"}. [He]{"entity": "gender", "value": "male"} wears a [knapsack]{"entity": "clothing", "value": "bag"} but [doesn't](negation) wear a [beret]{"entity": "clothing", "value": "hat"}.
+    intent: finding_someone
+  - action: action_slot_mapping
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      Yeah
+    intent: affirm
+  - action: find_person_form
+  - active_loop: null
+  - action: utter_submit_find_person_form
+  - user: |
+      You can stop the form.
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      Bye.
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 7 - Form Path -- A test story with unexpected input during a form
+  steps:
+  - user: |
+      Hi Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      I can no longer find my cousin. [She]{"entity": "gender", "value": "female"} is wearing [neither](negation) a [hat](clothing) [nor](negation) a [purse]{"entity": "clothing", "value": "bag"}.
+    intent: finding_someone
+  - action: action_slot_mapping
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      How many people have crossed the [alpha line](line) for [sixty-one times](passages)?
+    intent: count_people
+  - action: action_reset
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Stop!
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      Thanks for all!
+    intent: thanks
+  - action: utter_thanks
+
+- story: 8 - Several Counting Request with Negation Recognition
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      Can u tell me how many people of [male](gender) gender have passed over the [gamma line](line) for [twenty-eight times](passages) and how many of them [don't](negation) wear a [visor]{"entity": "clothing", "value": "hat"}? 
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Stop.
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      How many people [don't](negation) carry a [briefcase]{"entity": "clothing", "value": "bag"}?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping 
+  - user: | 
+      and how many of them [don't](negation) wear a [hat](clothing)?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: | 
+      You can stop.
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+
+- story: 9 - Gender Recognition (Count People Intent)
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      How many [male](gender) people are currently in the mall? 
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Stop.
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      How many people [female](gender) people are there instead? 
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping 
+  - user: | 
+      Bye, Pepper!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 11 - Attributes Recognition (Count People Intent)
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      How many people wear a [hat](clothing) but [not](negation) a [purse]{"entity": "clothing", "value": "bag"}? 
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Instead, how many are the people that [don't](negation) carry a [bag](clothing) but are wearing a [beret]{"entity": "clothing", "value": "hat"}? 
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: | 
+      Stop.
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+
+- story: 12 - All Attributes Recognition (Count People Intent)
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      Could you tell me the number of [female](gender) people who are currently wearing [neither](negation) a [hat](clothing) [nor](negation) a [bag](clothing)?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Instead, how many of them are also carrying a [bag](clothing)?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: | 
+      Stop.
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: | 
+      See you later, robot!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 13 - Fallback Intent
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      Do you know when this shopping mall was built?  
+    intent: nlu_fallback
+  - action: utter_please_rephrase
+  - user: |
+      Okay. Thanks anyway.
+    intent: thanks
+  - action: utter_thanks
+
+- story: 14 - Fallback Intent during count
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      Can you determine the number of people wearing a [hat](clothing)?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Do you know when the sun will set today?
+    intent: nlu_fallback
+  - action: utter_please_rephrase
+  - user: |
+      and how many of them are [female](gender)?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      Bye.
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye      
+
+- story: 15 - Fallback Intent during form
+  steps:
+  - user: |
+      I can no longer find my [mama]{"entity": "gender", "value": "female"}. [She]{"entity": "gender", "value": "female"} is wearing [not](negation) a [hat](clothing).
+    intent: finding_someone
+  - action: action_slot_mapping
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      Do you know if there are restaurants in the shopping mall?
+    intent: nlu_fallback
+  - action: utter_please_rephrase
+  - action: find_person_form
+  - active_loop: find_person_form
+  - user: |
+      Yes.
+    intent: affirm
+  - action: find_person_form
+  - active_loop: null
+  - action: utter_submit_find_person_form
+  - user: |
+      Yes. I wanna submit it.
+    intent: affirm
+  - action: action_submit
+  - user: |
+      Thanks for the information!
+    intent: thanks
+  - action: utter_thanks
+
+- story: 16 - Generic Double Count Groups Task
+  steps:
+  - user: |
+      Hello, Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      How many groups participated at the vision contest?
+    intent: count_groups
+  - action: action_reset_old_slot
+  - action: action_count_groups
+  - action: utter_ask_stopping
+  - user: |
+      and how many of thems have scored [zero point eight](mark) points?
+    intent: count_groups
+  - action: action_reset_old_slot
+  - action: action_count_groups
+  - action: utter_ask_stopping
+  - user: |
+      Stop!
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      Goodbye!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 17 - Contest questions about a partecipant
+  steps:
+  - user: |
+      Hello, Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      Did [giovanni lamb](member_group) partecipate in the contest?
+    intent: have_partecipated
+  - action: action_reset_old_slot
+  - action: action_have_partecipated
+  - action: utter_ask_stopping
+  - user: |
+      Thank you!
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      and who are his temmates?
+    intent: members_group
+  - action: action_reset_old_slot
+  - action: action_members_group
+  - action: utter_ask_stopping
+  - user: |
+      and in wich position they arrived?
+    intent: classification
+  - action: action_reset_old_slot
+  - action: action_classification
+  - action: utter_ask_stopping
+  - user: |
+      whit wich score?
+    intent: score_done
+  - action: action_reset_old_slot
+  - action: action_score_done
+  - action: utter_ask_stopping
+  - user: |
+      Thanks!
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      and what are the number of his group?
+    intent: group_id
+  - action: action_reset_old_slot
+  - action: action_group_id
+  - action: utter_ask_stopping
+  - user: |
+      Stop!
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      Goodbye!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 18 - Fallback Intent during question on contest
+  steps:
+  - user: |
+      Hello!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      who [won]{"entity": "position", "value": "first"} the competition?
+    intent: classification
+  - action: action_reset_old_slot
+  - action: action_classification
+  - action: utter_ask_stopping
+  - user: |
+      How are you today?
+    intent: nlu_fallback
+  - action: utter_please_rephrase
+  - user: |
+      and who are the member of the group?
+    intent: members_group
+  - action: action_reset_old_slot
+  - action: action_members_group
+  - action: utter_ask_stopping
+  - user: |
+      Bye.
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye 
+
+- story: 19 - Contest questions on different topics
+  steps:
+  - user: |
+      Hey Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      who arrived [first](position) in the artifical vision contest?
+    intent: classification
+  - action: action_reset_old_slot
+  - action: action_classification
+  - action: utter_ask_stopping
+  - user: |
+      Thank you!
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      who are the member of group [6](group_id)?
+    intent: members_group
+  - action: action_reset_old_slot
+  - action: action_members_group
+  - action: utter_ask_stopping
+  - user: |
+      Stop!
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      Tell me the score of the group that ranked the [last]{"entity": "position", "value": "fourteenth"} place.
+    intent: score_done
+  - action: action_reset_old_slot
+  - action: action_score_done
+  - action: utter_ask_stopping
+  - user: |
+      Thanks!
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      and what are the number of this group?
+    intent: group_id
+  - action: action_reset_old_slot
+  - action: action_group_id
+  - action: utter_ask_stopping
+  - user: |
+      Goodbye!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye
+
+- story: 20 - Count Task then question on competition
+  steps:
+  - user: |
+      Hello, Pepper!
+    intent: greet
+  - action: action_reset
+  - action: utter_greet
+  - action: utter_help
+  - user: |
+      how many [male](gender) are in the mall?
+    intent: count_people
+  - action: action_count_people
+  - action: utter_ask_stopping
+  - user: |
+      do you know who arrived [second](position) in the competition?
+    intent: classification
+  - action: action_reset_old_slot
+  - action: action_classification
+  - user: |
+      Stop!
+    intent: stop
+  - action: action_reset
+  - action: utter_help
+  - user: |
+      Goodbye!
+    intent: goodbye
+  - action: action_reset
+  - action: utter_goodbye

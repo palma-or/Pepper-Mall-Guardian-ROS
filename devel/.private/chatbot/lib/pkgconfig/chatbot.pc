@@ -1,0 +1,8 @@
+prefix=/home/giovanni/Desktop/Project_B/devel/.private/chatbot
+
+Name: chatbot
+Description: Description of chatbot
+Version: 0.0.0
+Cflags: -I/home/giovanni/Desktop/Project_B/devel/.private/chatbot/include
+Libs: -L${prefix}/lib 
+Requires: 

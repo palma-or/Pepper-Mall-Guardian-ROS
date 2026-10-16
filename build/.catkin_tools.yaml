@@ -1,0 +1,6 @@
+devel_space: /home/giovanni/Desktop/Project_B/devel
+install: false
+install_space: /home/giovanni/Desktop/Project_B/install
+profile: default
+source_space: /home/giovanni/Desktop/Project_B/src
+workspace: /home/giovanni/Desktop/Project_B

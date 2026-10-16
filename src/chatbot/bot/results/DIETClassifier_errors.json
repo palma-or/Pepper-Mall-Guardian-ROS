@@ -1,0 +1,2916 @@
+[
+  {
+    "text": "of course",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "clothing",
+        "start": 3,
+        "end": 9,
+        "confidence_entity": 0.4885491132736206,
+        "value": "course",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm not trying to find someone",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9949260950088501,
+        "value": "not",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tell me the number of people who traversed at least 3 times the delta line.",
+    "entities": [
+      {
+        "start": 52,
+        "end": 59,
+        "value": "3 times",
+        "entity": "passages"
+      },
+      {
+        "start": 64,
+        "end": 74,
+        "value": "delta line",
+        "entity": "line"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mark",
+        "start": 52,
+        "end": 59,
+        "confidence_entity": 0.5683528184890747,
+        "value": "3 times",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "line",
+        "start": 64,
+        "end": 74,
+        "confidence_entity": 0.9989705085754395,
+        "value": "delta line",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how many people haven't crossed 81 times the g line, today?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 23,
+        "value": "haven't",
+        "entity": "negation"
+      },
+      {
+        "start": 32,
+        "end": 40,
+        "value": "81 times",
+        "entity": "passages"
+      },
+      {
+        "start": 45,
+        "end": 51,
+        "value": "g line",
+        "entity": "line"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 16,
+        "end": 23,
+        "confidence_entity": 0.9940667152404785,
+        "value": "haven't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "mark",
+        "start": 32,
+        "end": 40,
+        "confidence_entity": 0.8753492832183838,
+        "value": "81 times",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "line",
+        "start": 45,
+        "end": 51,
+        "confidence_entity": 0.9976564645767212,
+        "value": "gamma line",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do you know the number of people that have not crossed for seventeen times the (delta line)(line)?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 46,
+        "value": "not",
+        "entity": "negation"
+      },
+      {
+        "start": 59,
+        "end": 74,
+        "value": "seventeen times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 43,
+        "end": 46,
+        "confidence_entity": 0.9995996356010437,
+        "value": "not",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "passages",
+        "start": 59,
+        "end": 74,
+        "confidence_entity": 0.8402656316757202,
+        "value": "seventeen times",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "line",
+        "start": 80,
+        "end": 85,
+        "confidence_entity": 0.7073468565940857,
+        "value": "delta",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can u telle me the number of people wearing a bag and that have walked past the tetha line four times?",
+    "entities": [
+      {
+        "start": 46,
+        "end": 49,
+        "value": "bag",
+        "entity": "clothing"
+      },
+      {
+        "start": 80,
+        "end": 90,
+        "value": "tetha line",
+        "entity": "line"
+      },
+      {
+        "start": 91,
+        "end": 101,
+        "value": "four times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "clothing",
+        "start": 46,
+        "end": 49,
+        "confidence_entity": 0.9974806904792786,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "line",
+        "start": 86,
+        "end": 90,
+        "confidence_entity": 0.9993305206298828,
+        "value": "line",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "passages",
+        "start": 91,
+        "end": 101,
+        "confidence_entity": 0.9560868144035339,
+        "value": "four times",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how many are the people that haven't stepped the delta line 17 times?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "haven't",
+        "entity": "negation"
+      },
+      {
+        "start": 49,
+        "end": 59,
+        "value": "delta line",
+        "entity": "line"
+      },
+      {
+        "start": 60,
+        "end": 68,
+        "value": "17 times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9994875192642212,
+        "value": "haven't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "line",
+        "start": 49,
+        "end": 59,
+        "confidence_entity": 0.9990742206573486,
+        "value": "delta line",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "mark",
+        "start": 60,
+        "end": 68,
+        "confidence_entity": 0.6579757928848267,
+        "value": "17 times",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I can no longer find my papa. He doesn't wear a hat but carries a cute handbag.",
+    "entities": [
+      {
+        "start": 24,
+        "end": 28,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 30,
+        "end": 32,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 33,
+        "end": 40,
+        "value": "doesn't",
+        "entity": "negation"
+      },
+      {
+        "start": 48,
+        "end": 51,
+        "value": "hat",
+        "entity": "clothing"
+      },
+      {
+        "start": 71,
+        "end": 78,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 30,
+        "end": 32,
+        "confidence_entity": 0.9999129772186279,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 33,
+        "end": 40,
+        "confidence_entity": 0.9948771595954895,
+        "value": "doesn't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 48,
+        "end": 51,
+        "confidence_entity": 0.9999082088470459,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 71,
+        "end": 78,
+        "confidence_entity": 0.9998149275779724,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Hey Pepper, I am trying to look for my father,  has neither a cap nor a handbag.",
+    "entities": [
+      {
+        "start": 39,
+        "end": 45,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 52,
+        "end": 59,
+        "value": "neither",
+        "entity": "negation"
+      },
+      {
+        "start": 62,
+        "end": 65,
+        "value": "hat",
+        "entity": "clothing"
+      },
+      {
+        "start": 66,
+        "end": 69,
+        "value": "nor",
+        "entity": "negation"
+      },
+      {
+        "start": 72,
+        "end": 79,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9389359951019287,
+        "value": "Hey",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "gender",
+        "start": 39,
+        "end": 45,
+        "confidence_entity": 0.9997836947441101,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 52,
+        "end": 59,
+        "confidence_entity": 0.999631404876709,
+        "value": "neither",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 62,
+        "end": 65,
+        "confidence_entity": 0.9998979568481445,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 66,
+        "end": 69,
+        "confidence_entity": 0.9997782111167908,
+        "value": "nor",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 72,
+        "end": 79,
+        "confidence_entity": 0.9998461008071899,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "no hat",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "no",
+        "entity": "negation"
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "clothing",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.9974539875984192,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Who placed at the first of the rankings?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 23,
+        "value": "1st",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Did group 10 secure the second place in the competition?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 12,
+        "value": "10",
+        "entity": "group_ID"
+      },
+      {
+        "start": 24,
+        "end": 30,
+        "value": "second",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "group_ID",
+        "start": 10,
+        "end": 12,
+        "confidence_entity": 0.9996691942214966,
+        "value": "10",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "group_ID",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.9052894115447998,
+        "value": "2nd",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "telle me if [del gaudio nunzio]](member_group) competed  in the tournament.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 13,
+        "end": 23,
+        "confidence_entity": 0.4345168173313141,
+        "value": "del gaudio",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Did palma orlando participate in the competition?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 17,
+        "value": "palma orlando",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.768959105014801,
+        "value": "palma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you confirm if Raffaele Sbardella was one of the tournament participants?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 37,
+        "value": "Raffaele Sbardella",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 19,
+        "end": 37,
+        "confidence_entity": 0.550682783126831,
+        "value": "Raffaele Sbardella",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "group_ID",
+        "start": 42,
+        "end": 45,
+        "confidence_entity": 0.5981384515762329,
+        "value": "1st",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "with wich points classified the first place in the torunament of artificial vision?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 37,
+        "value": "first",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "With how many points did the 1st place qualify in the competition?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 32,
+        "value": "1st",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "position",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.9829362630844116,
+        "value": "1st",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "member_group",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.8818508386611938,
+        "value": "qualify",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "with wich points classified the first and 4th place in the torunament of artificial vision?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 37,
+        "value": "first",
+        "entity": "position"
+      },
+      {
+        "start": 42,
+        "end": 45,
+        "value": "4th",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "position",
+        "start": 42,
+        "end": 45,
+        "confidence_entity": 0.9997958540916443,
+        "value": "4th",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How many people are wearing head covering?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 41,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you tell me if someone is dressed in headwear?",
+    "entities": [
+      {
+        "start": 41,
+        "end": 49,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me the number of girls wearing a head covering but not carrying a briefcase.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 27,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 38,
+        "end": 51,
+        "value": "hat",
+        "entity": "clothing"
+      },
+      {
+        "start": 56,
+        "end": 59,
+        "value": "not",
+        "entity": "negation"
+      },
+      {
+        "start": 71,
+        "end": 80,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.9996814727783203,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 56,
+        "end": 59,
+        "confidence_entity": 0.9995455145835876,
+        "value": "not",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 71,
+        "end": 80,
+        "confidence_entity": 0.999784529209137,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can you telle me the count of people carrying a bag and who have gone past the theta line at least one hundred and two times?",
+    "entities": [
+      {
+        "start": 48,
+        "end": 51,
+        "value": "bag",
+        "entity": "clothing"
+      },
+      {
+        "start": 79,
+        "end": 89,
+        "value": "theta line",
+        "entity": "line"
+      },
+      {
+        "start": 99,
+        "end": 124,
+        "value": "one hundred and two times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "clothing",
+        "start": 48,
+        "end": 51,
+        "confidence_entity": 0.9928949475288391,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "passages",
+        "start": 65,
+        "end": 69,
+        "confidence_entity": 0.9585210084915161,
+        "value": "gone",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "line",
+        "start": 85,
+        "end": 89,
+        "confidence_entity": 0.9984925985336304,
+        "value": "line",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "passages",
+        "start": 99,
+        "end": 114,
+        "confidence_entity": 0.5156747698783875,
+        "value": "one hundred and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "passages",
+        "start": 115,
+        "end": 124,
+        "confidence_entity": 0.9944062232971191,
+        "value": "two times",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how many people have not crossed by betaline eleven times?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "not",
+        "entity": "negation"
+      },
+      {
+        "start": 36,
+        "end": 44,
+        "value": "betaline",
+        "entity": "line"
+      },
+      {
+        "start": 45,
+        "end": 57,
+        "value": "eleven times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9972912669181824,
+        "value": "not",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "line",
+        "start": 36,
+        "end": 57,
+        "confidence_entity": 0.8364347219467163,
+        "value": "betaline eleven times",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm searching for my aunt. She is dressed in a snazzy cap and isn't carrying a knapsack.",
+    "entities": [
+      {
+        "start": 21,
+        "end": 25,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 27,
+        "end": 30,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 54,
+        "end": 57,
+        "value": "hat",
+        "entity": "clothing"
+      },
+      {
+        "start": 62,
+        "end": 67,
+        "value": "isn't",
+        "entity": "negation"
+      },
+      {
+        "start": 79,
+        "end": 87,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 21,
+        "end": 25,
+        "confidence_entity": 0.9997525811195374,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 27,
+        "end": 30,
+        "confidence_entity": 0.9997246861457825,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 47,
+        "end": 53,
+        "confidence_entity": 0.36134251952171326,
+        "value": "snazzy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "clothing",
+        "start": 54,
+        "end": 57,
+        "confidence_entity": 0.9998743534088135,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 62,
+        "end": 67,
+        "confidence_entity": 0.9960911870002747,
+        "value": "isn't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 79,
+        "end": 87,
+        "confidence_entity": 0.9998468160629272,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you tell me how many teams performed at a level of zero point seven points?",
+    "entities": [
+      {
+        "start": 55,
+        "end": 71,
+        "value": "zero point seven",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mark",
+        "start": 46,
+        "end": 51,
+        "confidence_entity": 0.5378894209861755,
+        "value": "level",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mark",
+        "start": 55,
+        "end": 71,
+        "confidence_entity": 0.4468972384929657,
+        "value": "zero point seven",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how many groups have a maximum score of 0.4?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 30,
+        "value": "maximum",
+        "entity": "negation"
+      },
+      {
+        "start": 40,
+        "end": 43,
+        "value": "0.4",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.651902437210083,
+        "value": "maximum",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mark",
+        "start": 40,
+        "end": 43,
+        "confidence_entity": 0.9997748732566833,
+        "value": "0.4",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "and in what position he arrived in the competition?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 21,
+        "end": 23,
+        "confidence_entity": 0.9152253866195679,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Let me know if nunzio del gaudio took part in the tournament.",
+    "entities": [
+      {
+        "start": 15,
+        "end": 32,
+        "value": "nunzio del gaudio",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "telle me if group 13 and Del Gaudio Nunzio competed  in the tournament.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 20,
+        "value": "13",
+        "entity": "group_ID"
+      },
+      {
+        "start": 25,
+        "end": 42,
+        "value": "Del Gaudio Nunzio",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "group_ID",
+        "start": 18,
+        "end": 20,
+        "confidence_entity": 0.999785840511322,
+        "value": "13",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "member_group",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.6618198156356812,
+        "value": "Del",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "member_group",
+        "start": 36,
+        "end": 42,
+        "confidence_entity": 0.9848698377609253,
+        "value": "Nunzio",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tell me the members that arrived sixth.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 38,
+        "value": "sixth",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "group_ID",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.9394482970237732,
+        "value": "6th",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "List the members of the team that lowest placed.",
+    "entities": [
+      {
+        "start": 34,
+        "end": 47,
+        "value": "14th",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How many points has petti pasquale and his team secured?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 34,
+        "value": "petti pasquale",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 26,
+        "end": 34,
+        "confidence_entity": 0.8558638095855713,
+        "value": "pasquale",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you tell me the groups that scored 1?",
+    "entities": [
+      {
+        "start": 41,
+        "end": 42,
+        "value": "1",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "group_ID",
+        "start": 41,
+        "end": 42,
+        "confidence_entity": 0.6111293435096741,
+        "value": "1",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tell me which groups reached 0 points.",
+    "entities": [
+      {
+        "start": 29,
+        "end": 30,
+        "value": "0",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "group_ID",
+        "start": 29,
+        "end": 30,
+        "confidence_entity": 0.953161358833313,
+        "value": "0",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Wait. I found him. I can see him.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.9842478036880493,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how many people have passing through [beta line] one time?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "line",
+        "start": 38,
+        "end": 47,
+        "confidence_entity": 0.9981347322463989,
+        "value": "beta line",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "passages",
+        "start": 49,
+        "end": 57,
+        "confidence_entity": 0.9987700581550598,
+        "value": "one time",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "could you tell me the amount of people that haven't crossed the lambda line at least one hundred and eleven times?",
+    "entities": [
+      {
+        "start": 44,
+        "end": 51,
+        "value": "haven't",
+        "entity": "negation"
+      },
+      {
+        "start": 64,
+        "end": 75,
+        "value": "lambda line",
+        "entity": "line"
+      },
+      {
+        "start": 85,
+        "end": 113,
+        "value": "one hundred and eleven times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 44,
+        "end": 51,
+        "confidence_entity": 0.9990766048431396,
+        "value": "haven't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "line",
+        "start": 64,
+        "end": 75,
+        "confidence_entity": 0.67,
+        "value": "lambda line",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "passages",
+        "start": 85,
+        "end": 96,
+        "confidence_entity": 0.9956275224685669,
+        "value": "one hundred",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "passages",
+        "start": 101,
+        "end": 113,
+        "confidence_entity": 0.9985594153404236,
+        "value": "eleven times",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do you know the count of people that have passed for sixty times over the (gamma line)(line)?",
+    "entities": [
+      {
+        "start": 53,
+        "end": 64,
+        "value": "sixty times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "passages",
+        "start": 53,
+        "end": 64,
+        "confidence_entity": 0.9963823556900024,
+        "value": "sixty times",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "line",
+        "start": 75,
+        "end": 80,
+        "confidence_entity": 0.9967993497848511,
+        "value": "gamma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you assist me in locating a colleague? I can't seem to find him.",
+    "entities": [
+      {
+        "start": 64,
+        "end": 67,
+        "value": "male",
+        "entity": "gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 49,
+        "end": 50,
+        "confidence_entity": 0.9717568159103394,
+        "value": "t",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "gender",
+        "start": 64,
+        "end": 67,
+        "confidence_entity": 0.9998385906219482,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i've lost my father. He is wearing a classic cap and carrying a fancy handbag.",
+    "entities": [
+      {
+        "start": 13,
+        "end": 19,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 21,
+        "end": 23,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "value": "hat",
+        "entity": "clothing"
+      },
+      {
+        "start": 70,
+        "end": 77,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.9996485710144043,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 21,
+        "end": 23,
+        "confidence_entity": 0.9997475743293762,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 45,
+        "end": 48,
+        "confidence_entity": 0.9993614554405212,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 64,
+        "end": 69,
+        "confidence_entity": 0.47656381130218506,
+        "value": "fancy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "clothing",
+        "start": 70,
+        "end": 77,
+        "confidence_entity": 0.9996587038040161,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I can no longer find my cousin. She is putting on a luxurious headpiece.",
+    "entities": [
+      {
+        "start": 32,
+        "end": 35,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 62,
+        "end": 71,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.999873161315918,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 62,
+        "end": 71,
+        "confidence_entity": 0.9349986910820007,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i've lost my son. He is wearing a fancy beret.",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 18,
+        "end": 20,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 40,
+        "end": 45,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9994884729385376,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 18,
+        "end": 20,
+        "confidence_entity": 0.9997746348381042,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.9287167191505432,
+        "value": "fancy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "clothing",
+        "start": 40,
+        "end": 45,
+        "confidence_entity": 0.9995124340057373,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I lost my children? He is a boy with a colorful knapsack and the hat.",
+    "entities": [
+      {
+        "start": 20,
+        "end": 22,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 28,
+        "end": 31,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 48,
+        "end": 56,
+        "value": "bag",
+        "entity": "clothing"
+      },
+      {
+        "start": 65,
+        "end": 68,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.3923643231391907,
+        "value": "children",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "gender",
+        "start": 20,
+        "end": 22,
+        "confidence_entity": 0.9996521472930908,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.9986483454704285,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 48,
+        "end": 56,
+        "confidence_entity": 0.9997881054878235,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 65,
+        "end": 68,
+        "confidence_entity": 0.9997684359550476,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "You misunderstood. She is wearing a (beret){\"entity\": \"clothing\", \"value\": \"hat\"}.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 22,
+        "value": "female",
+        "entity": "gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.9998130202293396,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 37,
+        "end": 43,
+        "confidence_entity": 0.9966429471969604,
+        "value": "beret)",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "member_group",
+        "start": 67,
+        "end": 72,
+        "confidence_entity": 0.5705332159996033,
+        "value": "value",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "clothing",
+        "start": 76,
+        "end": 79,
+        "confidence_entity": 0.999596893787384,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "he is wearing a fancy cap",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 22,
+        "end": 25,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9995834231376648,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9502580165863037,
+        "value": "fancy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "clothing",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.9994157552719116,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How many teams did not manage to score at least 2 points?",
+    "entities": [
+      {
+        "start": 48,
+        "end": 49,
+        "value": "2",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.998514711856842,
+        "value": "not",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "mark",
+        "start": 48,
+        "end": 49,
+        "confidence_entity": 0.9380322098731995,
+        "value": "2",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tell me if group 2 have arrived second in the contest.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 18,
+        "value": "2",
+        "entity": "group_ID"
+      },
+      {
+        "start": 32,
+        "end": 38,
+        "value": "second",
+        "entity": "group_ID"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "group_ID",
+        "start": 17,
+        "end": 18,
+        "confidence_entity": 0.995631217956543,
+        "value": "2",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "position",
+        "start": 32,
+        "end": 38,
+        "confidence_entity": 0.9800947904586792,
+        "value": "2nd",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you verify if Sessa Antonio earned the 8th ranking?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 31,
+        "value": "Sessa Antonio",
+        "entity": "member_group"
+      },
+      {
+        "start": 43,
+        "end": 46,
+        "value": "8th",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 18,
+        "end": 31,
+        "confidence_entity": 0.9781005382537842,
+        "value": "Sessa Antonio",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "And how many points does she have?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.9981928467750549,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Do you know where I can buy a new shirt?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "group_ID",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.4403010308742523,
+        "value": "shirt",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How many individuals aren't wearing sombrero?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "aren't",
+        "entity": "negation"
+      },
+      {
+        "start": 36,
+        "end": 44,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9994341731071472,
+        "value": "aren't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.4288584291934967,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can u tell me if there are some boys crossing over gamma line that [aren't] carrying a snapback?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 36,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 51,
+        "end": 61,
+        "value": "gamma line",
+        "entity": "line"
+      },
+      {
+        "start": 87,
+        "end": 95,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.6578747034072876,
+        "value": "some",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "gender",
+        "start": 32,
+        "end": 36,
+        "confidence_entity": 0.9997407793998718,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "line",
+        "start": 57,
+        "end": 61,
+        "confidence_entity": 0.9995282888412476,
+        "value": "line",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "negation",
+        "start": 68,
+        "end": 74,
+        "confidence_entity": 0.9987479448318481,
+        "value": "aren't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 87,
+        "end": 95,
+        "confidence_entity": 0.9998792409896851,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how many women have crossed over the a line twenty-three times?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 14,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 37,
+        "end": 43,
+        "value": "a line",
+        "entity": "line"
+      },
+      {
+        "start": 44,
+        "end": 62,
+        "value": "twenty-three times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9987687468528748,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "line",
+        "start": 39,
+        "end": 43,
+        "confidence_entity": 0.9981986880302429,
+        "value": "line",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "passages",
+        "start": 44,
+        "end": 62,
+        "confidence_entity": 0.9962976574897766,
+        "value": "twenty-three times",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "and how many boys have crossed the gamma line at least six times?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 35,
+        "end": 45,
+        "value": "gamma line",
+        "entity": "line"
+      },
+      {
+        "start": 55,
+        "end": 64,
+        "value": "six times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9997672438621521,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "line",
+        "start": 41,
+        "end": 45,
+        "confidence_entity": 0.9994433522224426,
+        "value": "line",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "passages",
+        "start": 55,
+        "end": 64,
+        "confidence_entity": 0.9150396585464478,
+        "value": "six times",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I lost my boyfriend. Have you seen him around?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 35,
+        "end": 38,
+        "value": "male",
+        "entity": "gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9995055198669434,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Have you seen my bro? He is carrying a vintage rucksack and a stylish cap.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 22,
+        "end": 24,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 47,
+        "end": 55,
+        "value": "bag",
+        "entity": "clothing"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.9209648966789246,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 22,
+        "end": 24,
+        "confidence_entity": 0.9997335076332092,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "member_group",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.3009735345840454,
+        "value": "vintage",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "clothing",
+        "start": 47,
+        "end": 55,
+        "confidence_entity": 0.9998786449432373,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 70,
+        "end": 73,
+        "confidence_entity": 0.9998729228973389,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I can't find my uncle. He isn't wearing a beanie.",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 23,
+        "end": 25,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 26,
+        "end": 31,
+        "value": "isn't",
+        "entity": "negation"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "value": "hat",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 6,
+        "end": 7,
+        "confidence_entity": 0.9852120876312256,
+        "value": "t",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "gender",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9995656609535217,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9998717308044434,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 26,
+        "end": 31,
+        "confidence_entity": 0.9996867179870605,
+        "value": "isn't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 42,
+        "end": 48,
+        "confidence_entity": 0.9998297691345215,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "you misunderstood. He is not carrying a bag.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 21,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 25,
+        "end": 28,
+        "value": "not",
+        "entity": "negation"
+      },
+      {
+        "start": 40,
+        "end": 43,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 19,
+        "end": 21,
+        "confidence_entity": 0.9998563528060913,
+        "value": "male",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How many teams managed to score zero point two five zero or more?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 56,
+        "value": "zero point two five zero",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mark",
+        "start": 32,
+        "end": 59,
+        "confidence_entity": 0.47630006074905396,
+        "value": "zero point two five zero or",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "do you know who occupied the final position in the competition?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 34,
+        "value": "14th",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "And who took the final position?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 22,
+        "value": "14th",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Could you provide the score achieved by ferraioli chiara and his team in the competition?",
+    "entities": [
+      {
+        "start": 40,
+        "end": 56,
+        "value": "ferraioli chiara",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 40,
+        "end": 49,
+        "confidence_entity": 0.9257001876831055,
+        "value": "ferraioli",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What’s your purpose?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "clothing",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.6259078979492188,
+        "value": "purpose",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Are there any dudes carrying a handbag?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "male",
+        "entity": "gender"
+      },
+      {
+        "start": 31,
+        "end": 38,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "clothing",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.9998201727867126,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do you know the amount of people that have crossed for more than thirty-three times over the (beta line)(line)?",
+    "entities": [
+      {
+        "start": 65,
+        "end": 83,
+        "value": "thirty-three times",
+        "entity": "passages"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "passages",
+        "start": 65,
+        "end": 83,
+        "confidence_entity": 0.9915550351142883,
+        "value": "thirty-three times",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "line",
+        "start": 94,
+        "end": 98,
+        "confidence_entity": 0.9986262321472168,
+        "value": "beta",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have lost my mum, can you see her?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 18,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 32,
+        "end": 35,
+        "value": "female",
+        "entity": "gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.9967908263206482,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "My friend is missing. She was last seen in a cap and doesn't carry a satchel.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 25,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "value": "hat",
+        "entity": "clothing"
+      },
+      {
+        "start": 53,
+        "end": 60,
+        "value": "doesn't",
+        "entity": "negation"
+      },
+      {
+        "start": 69,
+        "end": 76,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.9998797178268433,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 45,
+        "end": 48,
+        "confidence_entity": 0.9998414516448975,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 53,
+        "end": 60,
+        "confidence_entity": 0.9988453388214111,
+        "value": "doesn't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'm desperate, I'm trying to look for my cousin. She she was wearing a fashionable beanie but she didn't have a bag.",
+    "entities": [
+      {
+        "start": 49,
+        "end": 52,
+        "value": "female",
+        "entity": "gender"
+      },
+      {
+        "start": 83,
+        "end": 89,
+        "value": "hat",
+        "entity": "clothing"
+      },
+      {
+        "start": 112,
+        "end": 115,
+        "value": "bag",
+        "entity": "clothing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 49,
+        "end": 52,
+        "confidence_entity": 0.9994829893112183,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 53,
+        "end": 56,
+        "confidence_entity": 0.9982159733772278,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 83,
+        "end": 89,
+        "confidence_entity": 0.9993923902511597,
+        "value": "hat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "gender",
+        "start": 94,
+        "end": 97,
+        "confidence_entity": 0.9993873834609985,
+        "value": "female",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "negation",
+        "start": 98,
+        "end": 104,
+        "confidence_entity": 0.997697651386261,
+        "value": "didn't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing",
+        "start": 112,
+        "end": 115,
+        "confidence_entity": 0.9957401752471924,
+        "value": "bag",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How many groups achieved at least zero point one point?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 48,
+        "value": "zero point one",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mark",
+        "start": 34,
+        "end": 54,
+        "confidence_entity": 0.7740254402160645,
+        "value": "zero point one point",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tell me how many teams didn't score at least 1 point.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "didn't",
+        "entity": "negation"
+      },
+      {
+        "start": 45,
+        "end": 46,
+        "value": "1",
+        "entity": "mark"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "negation",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.9988810420036316,
+        "value": "didn't",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "mark",
+        "start": 45,
+        "end": 52,
+        "confidence_entity": 0.7801722884178162,
+        "value": "1 point",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Was antonucci asja involved in the artificial vision contest?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 18,
+        "value": "antonucci asja",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 4,
+        "end": 13,
+        "confidence_entity": 0.8783144354820251,
+        "value": "antonucci",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Did asja antonucci take part in the artificial vision contest?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 18,
+        "value": "asja antonucci",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 9,
+        "end": 18,
+        "confidence_entity": 0.5612692832946777,
+        "value": "antonucci",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "do you know wheter group thirty engaged in the challenge of artifical vision?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 31,
+        "value": "thirty",
+        "entity": "group_ID"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "position",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.995769739151001,
+        "value": "thirty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Which people are in the same group as [pasquale alessandro](member_group?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 39,
+        "end": 47,
+        "confidence_entity": 0.8712044358253479,
+        "value": "pasquale",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Which participants were in the group that secured the primary place?",
+    "entities": [
+      {
+        "start": 54,
+        "end": 61,
+        "value": "1st",
+        "entity": "position"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Could you give me the points for tramice davide?",
+    "entities": [
+      {
+        "start": 33,
+        "end": 47,
+        "value": "tramice davide",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Which group is iruna oltean a member of?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 27,
+        "value": "iruna oltean",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9789370894432068,
+        "value": "oltean",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you provide the group ID that vincent zaza belongs to?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 46,
+        "value": "vincent zaza",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Which group are iruna oltean and Solimeno Raffaele a member of?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 28,
+        "value": "iruna oltean",
+        "entity": "member_group"
+      },
+      {
+        "start": 33,
+        "end": 50,
+        "value": "Solimeno Raffaele",
+        "entity": "member_group"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "member_group",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9240404367446899,
+        "value": "oltean",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "member_group",
+        "start": 33,
+        "end": 50,
+        "confidence_entity": 0.9983269572257996,
+        "value": "solimeno raffaele",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

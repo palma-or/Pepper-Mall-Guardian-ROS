@@ -1,0 +1,602 @@
+[
+  {
+    "text": "Sayonara!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.325778603553772
+    }
+  },
+  {
+    "text": "sure",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "doubt",
+      "confidence": 0.4522855877876282
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.9816949367523193
+    }
+  },
+  {
+    "text": "never",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.35424381494522095
+    }
+  },
+  {
+    "text": "i don't know",
+    "intent": "doubt",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9462343454360962
+    }
+  },
+  {
+    "text": "reset",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7197210192680359
+    }
+  },
+  {
+    "text": "I'm not looking for anyone",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5470690727233887
+    }
+  },
+  {
+    "text": "I'm not trying to find someone",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.9247141480445862
+    }
+  },
+  {
+    "text": "Now I remember. He is probably holding a colorful bag.",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "finding_someone",
+      "confidence": 0.5324235558509827
+    }
+  },
+  {
+    "text": "no hat",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7617528438568115
+    }
+  },
+  {
+    "text": "She is adorning a beret.",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "finding_someone",
+      "confidence": 0.5721776485443115
+    }
+  },
+  {
+    "text": "Can you tell me who occupied the last place?",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.4880734980106354
+    }
+  },
+  {
+    "text": "Did palma orlando participate in the competition?",
+    "intent": "have_partecipated",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9387212991714478
+    }
+  },
+  {
+    "text": "With how many points did the 1st place qualify in the competition?",
+    "intent": "score_done",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9944905042648315
+    }
+  },
+  {
+    "text": "telle me what Zottarelli Egidio's number group is.",
+    "intent": "group_id",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9992708563804626
+    }
+  },
+  {
+    "text": "what group won the contest?",
+    "intent": "group_id",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9694297909736633
+    }
+  },
+  {
+    "text": "Do you know where is the bar?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "score_done",
+      "confidence": 0.031210357323288918
+    }
+  },
+  {
+    "text": "What time is it?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "capabilities",
+      "confidence": 0.8970792889595032
+    }
+  },
+  {
+    "text": "can u tell me if there is a game store in this shopping mall?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.017697807401418686
+    }
+  },
+  {
+    "text": "Where can I eat in this shopping mall?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.04760070517659187
+    }
+  },
+  {
+    "text": "See you around!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "capabilities",
+      "confidence": 0.5642070770263672
+    }
+  },
+  {
+    "text": "Now I remember. She is transporting a rucksack.",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "finding_someone",
+      "confidence": 0.8995233774185181
+    }
+  },
+  {
+    "text": "She wears a cap but doesn't carry a bag.",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.7075899839401245
+    }
+  },
+  {
+    "text": "I’d like to know where group 10](group_ID) placed in the competition.",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.9486058950424194
+    }
+  },
+  {
+    "text": "and in what place group eleven arrived?",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.5403736233711243
+    }
+  },
+  {
+    "text": "tell me the position with a score less tha zero point seven",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "score_done",
+      "confidence": 0.9821485280990601
+    }
+  },
+  {
+    "text": "Can you tell me who marino andrea is grouped with?",
+    "intent": "members_group",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.9974868297576904
+    }
+  },
+  {
+    "text": "Let me know which member received 0.044 points.",
+    "intent": "members_group",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.936495304107666
+    }
+  },
+  {
+    "text": "Which group occupied the tenth place in the standings.",
+    "intent": "group_id",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9663955569267273
+    }
+  },
+  {
+    "text": "Which teams do these scores belong to?",
+    "intent": "group_id",
+    "intent_prediction": {
+      "name": "count_groups",
+      "confidence": 0.49046453833580017
+    }
+  },
+  {
+    "text": "How is the weather?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.011256497353315353
+    }
+  },
+  {
+    "text": "how many animals are currently in the shopping mall?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.9998884201049805
+    }
+  },
+  {
+    "text": "how many dogs are there?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.9554199576377869
+    }
+  },
+  {
+    "text": "I lost my dog, can you help me?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "finding_someone",
+      "confidence": 0.9978106617927551
+    }
+  },
+  {
+    "text": "So long, Pepper! I appreciate your assistance.",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "capabilities",
+      "confidence": 0.47596052289009094
+    }
+  },
+  {
+    "text": "I must be going, Pepper. It was good to talk with you.",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.47737428545951843
+    }
+  },
+  {
+    "text": "Pepper, I'll see you soon. Thanks for everything.",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.9718015789985657
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7961357831954956
+    }
+  },
+  {
+    "text": "Would you be able to tell me if Saturnino Fabrizio successfully attained the 6th spot?",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "have_partecipated",
+      "confidence": 0.6724220514297485
+    }
+  },
+  {
+    "text": "I am curious whether Fabrizio Sturnino placed 3rd in the Artifica Vision competition.",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "have_partecipated",
+      "confidence": 0.9879531860351562
+    }
+  },
+  {
+    "text": "can you tell me the total made by group 16.",
+    "intent": "score_done",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.21255286037921906
+    }
+  },
+  {
+    "text": "Can you tell me what is the capital of Italy?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "capabilities",
+      "confidence": 0.8212053775787354
+    }
+  },
+  {
+    "text": "Do you know where I can buy a new shirt?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "capabilities",
+      "confidence": 0.08975537121295929
+    }
+  },
+  {
+    "text": "Tell me how much an average pair of shoes costs.",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.7726840376853943
+    }
+  },
+  {
+    "text": "Farewell, Pepper!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9359845519065857
+    }
+  },
+  {
+    "text": "I don't think so",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5745444893836975
+    }
+  },
+  {
+    "text": "boh",
+    "intent": "doubt",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.348971962928772
+    }
+  },
+  {
+    "text": "Now I remember. He is wearing a trilby.",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "doubt",
+      "confidence": 0.7434855103492737
+    }
+  },
+  {
+    "text": "bag",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.9379571080207825
+    }
+  },
+  {
+    "text": "and who classified thirty 1st?",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "score_done",
+      "confidence": 0.9322069883346558
+    }
+  },
+  {
+    "text": "Which rank did group fourteen obtain?",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.999997615814209
+    }
+  },
+  {
+    "text": "could you tell me if group Lamb Giovanni achieved the 4th position?",
+    "intent": "classification",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.9862396121025085
+    }
+  },
+  {
+    "text": "i want to know whether fabrizio saturnino is in the competition.",
+    "intent": "have_partecipated",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9999837875366211
+    }
+  },
+  {
+    "text": "Was Viktor Yanchev Dobrev a competitor in the artificial vision contest?",
+    "intent": "have_partecipated",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9743286371231079
+    }
+  },
+  {
+    "text": "with wich socre?",
+    "intent": "score_done",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.9999356269836426
+    }
+  },
+  {
+    "text": "and what group arrived in the last position?",
+    "intent": "group_id",
+    "intent_prediction": {
+      "name": "classification",
+      "confidence": 0.9999986886978149
+    }
+  },
+  {
+    "text": "Can you list the groups that obtained a score of 0.17?",
+    "intent": "group_id",
+    "intent_prediction": {
+      "name": "count_groups",
+      "confidence": 0.9749608635902405
+    }
+  },
+  {
+    "text": "Do you know where is the supermarket?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.02941938117146492
+    }
+  },
+  {
+    "text": "What is the closing time of the supermarket?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.030136778950691223
+    }
+  },
+  {
+    "text": "Name a good store in this supermarket to spend time on.",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2656559646129608
+    }
+  },
+  {
+    "text": "pepper, my buddy!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "finding_someone",
+      "confidence": 0.9643620252609253
+    }
+  },
+  {
+    "text": "absolutely",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.38154810667037964
+    }
+  },
+  {
+    "text": "I think so",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9761709570884705
+    }
+  },
+  {
+    "text": "No, that’s not correct",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6818985939025879
+    }
+  },
+  {
+    "text": "I wanna stop the search.",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.8447525501251221
+    }
+  },
+  {
+    "text": "He is carryin a shoulder bag.",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.6985601186752319
+    }
+  },
+  {
+    "text": "change",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.26169779896736145
+    }
+  },
+  {
+    "text": "do you know wheter group thirty engaged in the challenge of artifical vision?",
+    "intent": "have_partecipated",
+    "intent_prediction": {
+      "name": "count_groups",
+      "confidence": 0.8827722072601318
+    }
+  },
+  {
+    "text": "Which people are in the same group as [pasquale alessandro](member_group?",
+    "intent": "members_group",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.9227131009101868
+    }
+  },
+  {
+    "text": "Which participants were in the group that secured the primary place?",
+    "intent": "members_group",
+    "intent_prediction": {
+      "name": "group_id",
+      "confidence": 0.8284198045730591
+    }
+  },
+  {
+    "text": "Who are the individuals in these groups?",
+    "intent": "members_group",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.9035536050796509
+    }
+  },
+  {
+    "text": "Give me the group number of aliberti andrea.",
+    "intent": "group_id",
+    "intent_prediction": {
+      "name": "members_group",
+      "confidence": 0.6344403028488159
+    }
+  },
+  {
+    "text": "Do you know if there are restaurant in the shopping mall?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "doubt",
+      "confidence": 0.002119452692568302
+    }
+  },
+  {
+    "text": "how many cats are there?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "count_people",
+      "confidence": 0.8621670603752136
+    }
+  },
+  {
+    "text": "How do i look?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.02789449132978916
+    }
+  }
+]

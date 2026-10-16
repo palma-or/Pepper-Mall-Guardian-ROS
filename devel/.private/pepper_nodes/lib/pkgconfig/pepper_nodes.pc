@@ -1,0 +1,8 @@
+prefix=/home/giovanni/Desktop/Project_B/devel/.private/pepper_nodes
+
+Name: pepper_nodes
+Description: Description of pepper_nodes
+Version: 0.0.0
+Cflags: -I/home/giovanni/Desktop/Project_B/devel/.private/pepper_nodes/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime
